@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../css/default.css">
+
+    <!-- JQuery, Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Scripts personalizados -->
+    <script src="../js/app.js"></script>
+
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+
+        <!-- Título -->
+        <div class="col-md-12 titulo">
+            <h1>
+                <i class="glyphicon glyphicon-headphones"></i>
+            Lista de canciones
+            </h1>
+        </div>
+
+        <!-- Plantilla para la lista de canciones -->
+        <script id="songs-template" type="text/x-handlebars-template">
+            {{#each this}}
+            <li>
+                <div class="song">
+                    <span class="list-number">{{number}}</span>
+                    <span class="song-title-sp pull-center">{{title}}</span>
+                    <span class="song-artist pull-center">{{artist}}</span>
+                    <span class="song-duration pull-right">{{duration}}</span>
+                </div>
+            </li>
+            {{/each}}
+        </script>
+
+
+        <!-- Contenedor -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Lista de canciones -->
+                <div class="col-md-5">
+                    <section class="panel panel-default">
+
+                        <!-- Botones en la parte superior -->
+                        <div class="panel-heading form-inline">
+                            <!-- Caja de texto -->
+                            <input type="text" class="form-control col-md-5"
+                                           id="busqueda_text" name="busqueda_text"
+                                           placeholder="Busqueda"/>
+
+                                    <!-- Botón de Agregar -->
+                             <button type="button"
+                                            id="btn_buscar"
+                                            class="btn btn-primary search_button glyphicon glyphicon-search">
+                             </button>
+
+
+
+                        </div>
+
+                        <!-- Lista de Tareas -->
+                        <div class="panel-body">
+                            <ul class="task-list" id="task-list" >
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Botones del medio -->
+                <div>
+
+                </div>
+
+                <!-- Listas de reproducción -->
+                <div class="col-md-5">
+                    <section class="panel panel-default">
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

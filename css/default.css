@@ -1,0 +1,39 @@
+@font-face { font-family: Dual-300; src: url(../Assets/Fonts/Dual-300.ttf); }
+@font-face {
+    font-family: Dual-600;
+    src: url(../Assets/Fonts/2.ttf);
+}
+@font-face {
+    font-family: Dual-100; src: url(../Assets/Fonts/Dual-100.ttf);
+}
+@font-face {
+    font-family: Uni-Sans; src: url(../Assets/Fonts/7.ttf);
+}
+
+.body
+{
+    background-color: #282828   ;
+}
+.titulo{
+    background-color: #282828 ;
+    font-family: Dual-100;
+    font-size: large;
+    color: snow;
+}
+.song-title{
+
+}
+.song-title
+{
+
+}
+.song-title-sp
+{
+
+}
+.song-artist
+{
+
+}
+.search_button{
+}
